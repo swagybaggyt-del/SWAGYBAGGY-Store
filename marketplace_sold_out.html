@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8" />
+  <title>VOID MARKET — SOLD OUT</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <style>
+    :root{
+      --bg:#0a0b10; --panel:#121425; --accent:#8b5cf6; --accent2:#22d3ee;
+      --text:#e5e7eb; --muted:#9ca3af;
+    }
+    *{box-sizing:border-box}
+    body{
+      margin:0; font-family: Inter, system-ui, Arial, sans-serif;
+      background: radial-gradient(1200px 600px at 10% -10%, #1a1b3a, transparent 40%),
+                  radial-gradient(900px 500px at 110% 10%, #0b3b4a, transparent 45%),
+                  var(--bg);
+      color:var(--text);
+    }
+    header{
+      position:sticky; top:0; backdrop-filter: blur(10px);
+      background: rgba(10,11,16,.8);
+      border-bottom:1px solid rgba(139,92,246,.3);
+    }
+    .wrap{max-width:1200px; margin:0 auto; padding:18px 20px}
+    .brand{display:flex; gap:12px; align-items:center; font-weight:800}
+    .logo{width:38px; height:38px; border-radius:12px;
+      background: linear-gradient(135deg, var(--accent), var(--accent2));}
+    main{padding:30px 20px}
+    .grid{max-width:1200px; margin:0 auto; display:grid; gap:22px;
+      grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));}
+    .card{background:linear-gradient(180deg, rgba(18,20,37,.9), rgba(18,20,37,.7));
+      border:1px solid rgba(139,92,246,.25); border-radius:20px; overflow:hidden;
+      box-shadow:0 20px 40px rgba(0,0,0,.45);}
+    .thumb{height:180px; overflow:hidden}
+    .thumb img{width:100%; height:100%; object-fit:cover}
+    .info{padding:16px}
+    .sold{position:absolute; margin:16px 0 0 -44px; transform:rotate(-45deg);
+      background:linear-gradient(135deg, var(--accent), var(--accent2));
+      color:#0a0b10; padding:10px 54px; font-weight:900; font-size:12px}
+    footer{text-align:center; opacity:.7; padding:30px 10px; font-size:13px}
+  </style>
+</head>
+<body>
+  <header>
+    <div class="wrap brand">
+      <div class="logo"></div>
+      <div>VOID MARKET <div style="font-size:13px;opacity:.7">де все вже продано</div></div>
+    </div>
+  </header>
+
+  <main>
+    <section class="grid">
+      <!-- 🔽 ДОДАВАЙТЕ ТОВАРИ ТУТ -->
+
+      <article class="card">
+        <div class="sold">РОЗПРОДАНО</div>
+        <div class="thumb"><img src="products/item1.jpg"></div>
+        <div class="info"><strong>Товар 1</strong><div class="muted">Немає в наявності</div></div>
+      </article>
+
+      <article class="card">
+        <div class="sold">РОЗПРОДАНО</div>
+        <div class="thumb"><img src="products/item2.jpg"></div>
+        <div class="info"><strong>Товар 2</strong><div class="muted">Немає в наявності</div></div>
+      </article>
+
+    </section>
+  </main>
+
+  <footer>© VOID MARKET • SOLD OUT MODE ALWAYS ON</footer>
+</body>
+</html>
