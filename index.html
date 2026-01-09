@@ -47,7 +47,6 @@
     .thumb:hover img{
       transform: scale(1.05);
     }
-    /* overlay опису */
     .overlay{
       position: absolute;
       bottom: -100%; 
@@ -59,7 +58,7 @@
       text-align:center;
       font-size:13px;
       transition: bottom .3s ease;
-      z-index:5;
+      z-index:5; /* під sold */
     }
     .thumb:hover .overlay{
       bottom:0;
@@ -67,14 +66,15 @@
     .info{padding:16px}
     .sold{
       position:absolute; 
-      margin:16px 0 0 -44px; 
+      top:16px; 
+      left:16px;
       transform:rotate(-45deg);
       background:linear-gradient(135deg, var(--accent), var(--accent2));
       color:#0a0b10; 
       padding:10px 54px; 
       font-weight:900; 
       font-size:12px;
-      z-index:10; /* завжди зверху */
+      z-index:20; /* завжди зверху */
     }
     footer{text-align:center; opacity:.7; padding:30px 10px; font-size:13px}
   </style>
@@ -89,7 +89,6 @@
 
   <main>
     <section class="grid">
-      <!-- 🔽 ДОДАВАЙТЕ ТОВАРИ ТУТ -->
 
       <article class="card">
         <div class="sold">РОЗПРОДАНО</div>
